@@ -62,3 +62,18 @@ pipeline:
                                             memory: 1Gi
                                             cpu: "1"
                                 failureStrategies: []
+                          - step:
+                                type: BuildAndPushDockerRegistry
+                                name: pushToDockerHub
+                                identifier: pushToDockerHub
+                                spec:
+                                    connectorRef: account.bootcampdockerhub
+                                    repo: nikpap/payment-service
+                                    tags:
+                                        - tchokomeni-latest
+                                    dockerfile: /harness/payment-service/Dockerfile
+                                    optimize: true
+                                    resources:
+                                        limits:
+                                            memory: 1Gi
+                                            cpu: "1"
