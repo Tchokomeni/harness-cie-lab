@@ -9,7 +9,7 @@ pipeline:
         ci:
             codebase:
                 connectorRef: githubtchokomeni
-                repoName: https://github.com/Tchokomeni/harness-cie-lab
+                repoName: harness-cie-lab
                 build: <+input>
     stages:
         - stage:
