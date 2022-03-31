@@ -37,7 +37,7 @@ pipeline:
                                     args: test
                                     packages: com.nikp
                                     runOnlySelectedTests: true
-                                    preCommand: cd payment service
+                                    preCommand: cd payment-service
                                     reports:
                                         type: JUnit
                                         spec:
@@ -77,4 +77,3 @@ pipeline:
                                         limits:
                                             memory: 1Gi
                                             cpu: "1"
-              variables: []
