@@ -1,0 +1,23 @@
+connector:
+  name: github-tchokomeni
+  identifier: githubtchokomeni
+  description:
+  orgIdentifier: christophetchokomeni
+  projectIdentifier: christopheHandsonLab
+  type: Github
+  spec:
+    url: https://github.com/Tchokomeni
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: github-tchokomeni
+          tokenRef: christophesecret
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: christophesecret
+    executeOnDelegate: true
+    type: Account
