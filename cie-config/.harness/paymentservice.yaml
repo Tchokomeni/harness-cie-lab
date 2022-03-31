@@ -62,4 +62,3 @@ pipeline:
                                             memory: 1Gi
                                             cpu: "1"
                                 failureStrategies: []
-              variables: []
